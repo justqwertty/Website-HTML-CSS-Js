@@ -9,26 +9,28 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  font-size: 1rem; /* Base font size */
 }
 
 h1 {
   color: black;
   font-weight: bold;
+  font-size: 2rem; /* Larger font size for headings */
 }
 
 header {
   text-align: center;
-  padding: 20px 0;
+  padding: 2rem 0; /* Relative padding */
 }
 
 .nav-links {
   width: 90%;
   max-width: 600px;
   height: auto;
-  padding: 10px;
-  border: 5px solid black;
-  margin: 20px auto;
-  font-size: larger;
+  padding: 1rem;
+  border: 0.3rem solid black;
+  margin: 2rem auto;
+  font-size: 1.2rem;
   border-style: solid;
 }
 
@@ -36,9 +38,9 @@ header {
   width: 90%;
   max-width: 600px;
   height: auto;
-  padding: 10px;
-  border: 5px solid black;
-  margin: 20px auto;
+  padding: 1rem;
+  border: 0.3rem solid black;
+  margin: 2rem auto;
   border-style: solid;
 }
 
@@ -46,13 +48,12 @@ header {
   width: 90%;
   max-width: 800px;
   height: auto;
-  padding: 10px;
-  border: 5px solid black;
-  margin: 20px auto;
+  padding: 1rem;
+  border: 0.3rem solid black;
+  margin: 2rem auto;
   border-style: solid;
   text-align: center;
 }
-
 /* Vertical Tab Layout */
 .tab-container {
   display: flex;
@@ -65,23 +66,24 @@ header {
 .tab {
   display: flex;
   flex-direction: column;
-  width: 200px; /* Adjust width as needed */
+  width: 20%;/* Adjust width as needed */
   background-color: #f1f1f1;
   border-right: 1px solid #ccc;
 }
+
 
 /* Tab Buttons */
 .tab button {
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
+  padding: 1rem;
   width: 100%;
   border: none;
   outline: none;
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 /* Change background color of buttons on hover */
@@ -97,7 +99,7 @@ header {
 /* Tab Content Container */
 .tab-content-container {
   flex: 1;
-  padding: 20px;
+  padding: 1.5rem;
   background-color: white;
 }
 
@@ -113,9 +115,17 @@ header {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+  body {
+      font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+  }
+
+  h1 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
   .nav-links, .about1, .projects1 {
       width: 95%;
-      margin: 10px auto;
+      margin: 1rem auto;
   }
 
   .tab-container {
@@ -125,35 +135,62 @@ header {
   .tab {
       width: 100%;
       border-right: none;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 0.1rem solid #ccc;
   }
 
   .tab button {
       text-align: center;
-      padding: 15px;
+      padding: 0.8rem;
   }
 
   .tab-content-container {
-      padding: 15px;
+      padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
+  body {
+      font-size: 0.8rem; /* Smaller font size for very small screens */
+  }
+
   h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem; /* Adjust heading size for very small screens */
   }
 
   .nav-links, .about1, .projects1 {
       width: 100%;
-      margin: 5px auto;
+      margin: 0.5rem auto;
   }
 
   .tab button {
-      padding: 10px;
-      font-size: 14px;
+      padding: 0.6rem;
+      font-size: 0.9rem;
   }
 
   .tab-content-container {
-      padding: 10px;
+      padding: 0.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+      font-size: 1.2rem; /* Larger font size for bigger screens */
+  }
+
+  h1 {
+      font-size: 2.5rem; /* Larger heading size for bigger screens */
+  }
+
+  .nav-links, .about1, .projects1 {
+      max-width: 800px; /* Wider containers for bigger screens */
+  }
+
+  .tab button {
+      padding: 1.2rem;
+      font-size: 1.1rem;
+  }
+
+  .tab-content-container {
+      padding: 2rem;
   }
 }
