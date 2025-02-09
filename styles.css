@@ -16,53 +16,46 @@ h1 {
 }
 header{
     text-align: center;
-    margin: 0 auto;
-    width: auto;
-    padding: 10;
-    outline: auto;
-    outline-width: 2;
+
 }
 
 .nav-links{
-    list-style: none;/*i wanted them horizontal*/
-    display: flex;
-    gap: 20px;
-    text-align: center;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: large;
+
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: auto;
+    font-size: larger;
+    border-style: solid;
     
 }
 
 .about1 {
-    width:100%;
-    overflow:auto;
-    padding: auto;
-    outline: auto;
-  }
-.about1 {
-    width:33%;
-    float:left;
+  width: 600px;
+  height: auto;
+  padding: 10px;
+  border: 5px solid black;
+  margin: auto;
+  border-style: groove;
+  position: absolute;
+    left: 50;
+    border-style: solid;
   }
 
 
- /*  make one big box with all of them
+
+
   .projects1 {
-    width:33%;
-    float:none;
+    width: autopx;
+    height: auto;
+    padding: 10px;
+    border: 5px solid black;
+    margin: auto;
+    border-style: groove;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    border-style: solid;
+
   }
-  .resume1 {
-    width:33%;
-    float:right;
-  }
-
-
-  MAKE ITS OWN BOX PLS FUTURE ME
-.projects1{
-    padding: auto;
-    outline: auto;
-}
-  
-
- *\
