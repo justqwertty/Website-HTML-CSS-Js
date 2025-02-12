@@ -16,7 +16,11 @@ h1 {
   color: black;
   font-weight: bold;
   font-size: 2rem; /* Larger font size for headings */
+  text-align: center;
+  text-decoration: underline;
+  
 }
+
 
 header {
   text-align: center;
@@ -42,11 +46,13 @@ header {
   border: 0.3rem solid black;
   margin: 2rem auto;
   border-style: solid;
+  text-align: center;
+  
 }
 
 .projects1 {
   width: 90%;
-  max-width: 800px;
+  max-width: 1500px;
   height: auto;
   padding: 1rem;
   border: 0.3rem solid black;
@@ -71,6 +77,9 @@ header {
   border-right: 1px solid #ccc;
 }
 
+.h3{
+  font-weight: bold;
+}
 
 /* Tab Buttons */
 .tab button {
